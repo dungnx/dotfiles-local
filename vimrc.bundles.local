@@ -1,0 +1,24 @@
+" Unplug Ruby stuffs
+UnPlug 'tpope/vim-rails'
+UnPlug 'tpope/vim-rake'
+UnPlug 'tpope/vim-rhubarb'
+
+UnPlug 'slim-template/vim-slim'
+
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
+Plug 'dracula/vim', { 'as': 'dracula' }
+
+" Snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+
+" syntax checking
+Plug 'vim-syntastic/syntastic'
+
+" Python
+Plug 'nvie/vim-flake8'
+Plug 'fisadev/vim-isort'
+Plug 'davidhalter/jedi-vim'
