@@ -22,3 +22,6 @@ Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8'
 Plug 'fisadev/vim-isort'
 Plug 'davidhalter/jedi-vim'
+
+" Golang
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
