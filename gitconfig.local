@@ -1,3 +1,6 @@
 [user]
   name = Nguyen Xuan Dung
   email = dung.nx@teko.vn
+
+[url "git@git.teko.vn:"]
+  insteadOf = https://git.teko.vn/
