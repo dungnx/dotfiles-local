@@ -1,7 +1,13 @@
 " Unplug Ruby stuffs
+UnPlug 'vim-ruby/vim-ruby'
+UnPlug 'tpope/vim-rake'
 UnPlug 'tpope/vim-rails'
 UnPlug 'tpope/vim-rake'
 UnPlug 'tpope/vim-rhubarb'
+
+UnPlug 'elixir-lang/vim-elixir'
+
+UnPlug 'pangloss/vim-javascript'
 
 UnPlug 'slim-template/vim-slim'
 
@@ -19,9 +25,9 @@ Plug 'honza/vim-snippets'
 Plug 'vim-syntastic/syntastic'
 
 " Python
-Plug 'nvie/vim-flake8'
-Plug 'fisadev/vim-isort'
-Plug 'davidhalter/jedi-vim'
+" Plug 'nvie/vim-flake8'
+" Plug 'fisadev/vim-isort'
+" Plug 'davidhalter/jedi-vim'
 
 " Golang
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }

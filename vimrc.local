@@ -1,3 +1,6 @@
+set tabstop=4
+set shiftwidth=4
+
 " Unmap mappings with old leader
 " Switch between the last two files
 nunmap <Leader><Leader>
