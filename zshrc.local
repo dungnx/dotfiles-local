@@ -1,7 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/dungnx/.oh-my-zsh"
-ZSH_THEME="spaceship"
-plugins=(git z zsh-syntax-highlighting zsh-autosuggestions docker docker-compose kubectl kube-ps1)
+# use starship instead
+# ZSH_THEME="spaceship"
+plugins=(git z docker docker-compose kubectl kube-ps1)
 source $ZSH/oh-my-zsh.sh
 
 if command -v starship 1>/dev/null 2>&1; then
@@ -14,8 +15,8 @@ if command -v direnv 1>/dev/null 2>&1; then
 fi
 
 # pbcopy/pbpaste
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
+# alias pbcopy='xclip -selection clipboard'
+# alias pbpaste='xclip -selection clipboard -o'
 
 # Golang
 export GOPATH=$HOME
@@ -50,8 +51,15 @@ export FZF_CTRL_T_COMMAND="$FD_BIN $FD_OPTIONS"
 export FZF_ALT_C_COMMAND="$FD_BIN --type d $FD_OPTIONS"
 
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=60"
+if [ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
+    source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+    ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=60"
+fi
+
+[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+[ -f /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh ] && source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # spaceship theme
-SPACESHIP_KUBECTL_SHOW=true
-SPACESHIP_KUBECTL_VERSION_SHOW=false
+# SPACESHIP_KUBECTL_SHOW=true
+# SPACESHIP_KUBECTL_VERSION_SHOW=false
