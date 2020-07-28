@@ -2,7 +2,7 @@
 export ZSH="/home/dungnx/.oh-my-zsh"
 # use starship instead
 # ZSH_THEME="spaceship"
-plugins=(git z docker docker-compose kubectl kube-ps1)
+plugins=(git z docker docker-compose kubectl kube-ps1 zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 if command -v starship 1>/dev/null 2>&1; then
@@ -19,6 +19,7 @@ fi
 # alias pbpaste='xclip -selection clipboard -o'
 
 # Golang
+[ -d "/usr/local/go/bin" ] && export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
 

@@ -2,7 +2,6 @@
 UnPlug 'vim-ruby/vim-ruby'
 UnPlug 'tpope/vim-rake'
 UnPlug 'tpope/vim-rails'
-UnPlug 'tpope/vim-rake'
 UnPlug 'tpope/vim-rhubarb'
 
 UnPlug 'elixir-lang/vim-elixir'
@@ -23,6 +22,9 @@ Plug 'honza/vim-snippets'
 
 " syntax checking
 Plug 'vim-syntastic/syntastic'
+
+" editor
+Plug 'jiangmiao/auto-pairs'
 
 " Python
 " Plug 'nvie/vim-flake8'
