@@ -1,14 +1,13 @@
-" Unplug Ruby stuffs
-UnPlug 'vim-ruby/vim-ruby'
-UnPlug 'tpope/vim-rake'
-UnPlug 'tpope/vim-rails'
-UnPlug 'tpope/vim-rhubarb'
+" UnPlug unused plugins
+UnPlug 'vim-ruby'
+UnPlug 'vim-rake'
+UnPlug 'vim-rails'
+UnPlug 'vim-rhubarb'
+UnPlug 'vim-elixir'
+UnPlug 'vim-javascript'
+UnPlug 'vim-slim'
+UnPlug 'ale'
 
-UnPlug 'elixir-lang/vim-elixir'
-
-UnPlug 'pangloss/vim-javascript'
-
-UnPlug 'slim-template/vim-slim'
 
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
