@@ -6,9 +6,8 @@ UnPlug 'vim-rhubarb'
 UnPlug 'vim-elixir'
 UnPlug 'vim-javascript'
 UnPlug 'vim-slim'
-UnPlug 'ale'
 
-
+" My plugins
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
