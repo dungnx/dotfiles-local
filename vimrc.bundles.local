@@ -5,13 +5,13 @@ UnPlug 'vim-rails'
 UnPlug 'vim-rhubarb'
 UnPlug 'vim-elixir'
 UnPlug 'vim-javascript'
-UnPlug 'vim-slim'
 
-" My plugins
+" Appearance
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'ryanoasis/vim-devicons'
+" temporary disable due to an annoying bug https://github.com/ryanoasis/vim-devicons/issues/359
+" Plug 'ryanoasis/vim-devicons'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Snippets
@@ -23,6 +23,8 @@ Plug 'vim-syntastic/syntastic'
 
 " editor
 Plug 'jiangmiao/auto-pairs'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Python
 " Plug 'nvie/vim-flake8'
