@@ -24,12 +24,14 @@ Plug 'vim-syntastic/syntastic'
 " editor
 Plug 'jiangmiao/auto-pairs'
 Plug 'AndrewRadev/splitjoin.vim'
+
+" coding
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Python
-" Plug 'nvie/vim-flake8'
-" Plug 'fisadev/vim-isort'
-" Plug 'davidhalter/jedi-vim'
+Plug 'nvie/vim-flake8'
+Plug 'fisadev/vim-isort'
+Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build' }
 
 " Golang
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
