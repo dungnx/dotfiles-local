@@ -36,8 +36,10 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$(go env GOPATH)/bin
 
 # pyenv
+export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$HOME/.pyenv/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
+	eval "$(pyenv init --path)"
 	eval "$(pyenv init -)"
 	eval "$(pyenv virtualenv-init -)"
 fi
@@ -76,7 +78,3 @@ fi
 # spaceship theme
 # SPACESHIP_KUBECTL_SHOW=true
 # SPACESHIP_KUBECTL_VERSION_SHOW=false
-
-# Rust Cargo
-
-. "$HOME/.cargo/env"

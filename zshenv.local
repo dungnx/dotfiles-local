@@ -1,2 +1,4 @@
-# Rust cargo
-. "$HOME/.cargo/env"
+# Rust Cargo
+if [ -f "$HOME/.cargo/env" ]; then
+	. "$HOME/.cargo/env"
+fi
