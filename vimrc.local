@@ -20,7 +20,7 @@ nunmap <Leader>r
 let mapleader = ","
 
 " NerdTree
-nmap <leader>ne :NERDTree<cr>
+nmap <leader>ne :NERDTreeToggle<cr>
 
 " Switch between the last two files
 nnoremap <Leader><Leader> <C-^>
